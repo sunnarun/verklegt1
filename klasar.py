@@ -1,27 +1,47 @@
+CHAR = '-'
+
+
 class EmployeeManagement():
     def renderMenu(self):
         user_input = "1"
         while user_input == "1" or user_input == "2" or user_input == "3":
-            print("1. Create emlpoyee")
-            print("2. Get employee data")
-            print("3. Update employee")
+            print(''' -------------------------------------------''')
+            print('''|                  NaN Air                  |''')
+            print(''' ------------------------------------------- ''')
+            print('''| (1) Create employee                       |''')
+            print('''| (2) Get employee data                     |''')
+            print('''| (3) Update employee                       |''')
+            print('''|                                           |''')
+            print('''| (press "b" for back and "q" to quit)      |''')
+            print(''' -------------------------------------------''')
             user_input = input()
 
 class PlaneManagement():
     def renderMenu(self):
         user_input = "1"
-        while user_input == "1" or user_input == "2" or user_input == "3":
-            print("1. Create plane")
-            print("2. Get list of planes")
+        while user_input == "1" or user_input == "2":
+            print(''' -------------------------------------------''')
+            print('''|                  NaN Air                  |''')
+            print(''' ------------------------------------------- ''')
+            print('''| (1) Create plane                          |''')
+            print('''| (2) Get list of planes                    |''')
+            print('''|                                           |''')
+            print('''| (press "b" for back and "q" to quit)      |''')
+            print(''' -------------------------------------------''')
             user_input = input()
 
 class VoyageManagement():
     def renderMenu(self):
         user_input = "1"
         while user_input == "1" or user_input == "2":
-            print("1. Create destination")
-            print("2. Create voyage")
-            print("any other charachter for main menu")
+            print(''' -------------------------------------------''')
+            print('''|                  NaN Air                  |''')
+            print(''' ------------------------------------------- ''')
+            print('''| (1) Create destination                    |''')
+            print('''| (2) Create voyage                         |''')
+            print('''|                                           |''')
+            print('''| (press "b" for back and "q" to quit)      |''')
+            print(''' -------------------------------------------''')
             user_input = input()
 
 class MainPage():
@@ -33,10 +53,15 @@ class MainPage():
     def renderMenu(self):
         user_input = "1"
         while user_input == "1" or user_input == "2" or user_input == "3":
-            print("1. Employee Management")
-            print("2. Voyage Management")
-            print("3. Plane Management")
-            print("any other char to quit")
+            print(''' -------------------------------------------''')
+            print('''|                  NaN Air                  |''')
+            print(''' ------------------------------------------- ''')
+            print('''| (1) Employee Management                   |''')
+            print('''| (2) Voyage Management                     |''')
+            print('''| (3) Plane Management                      |''')
+            print('''|                                           |''')
+            print('''| (press "b" for back and "q" to quit)      |''')
+            print(''' -------------------------------------------''')
             user_input = input()
             if user_input == "1":
                 self.__employeeManagement.renderMenu()
