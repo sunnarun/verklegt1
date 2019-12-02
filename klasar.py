@@ -1,6 +1,3 @@
-CHAR = '-'
-
-
 class EmployeeManagement():
     def renderMenu(self):
         user_input = "1"
