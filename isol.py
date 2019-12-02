@@ -1,7 +1,0 @@
-print("isol")
-print("bagg")
-print("Sunna er best")
-print("git master")
-print("hello")
-print("ISOL")
-print("Whatsup losers")
