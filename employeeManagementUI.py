@@ -13,9 +13,10 @@ class EmployeeManagementUI():
             print('''|                                           |''')
             print(''' ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾''')
             print()
-            user_input = input()
+            userdisplay_info_input = input()
             self.get_employee_info()
-    
+
+
     def get_employee_info(self):
         self.role = self.get_role()
         self.ssn = input("Enter SSN: ")
@@ -29,7 +30,8 @@ class EmployeeManagementUI():
             self.license = "N/A"
         self.display_info()
 
-    def display_info(self):
+
+    def (self):
         print()
         print(''' ___________________________________________''')
         print('''|  NaN Air - Employee successfully created  |''')
@@ -51,7 +53,7 @@ class EmployeeManagementUI():
         print()
 
         # self, ssn, name, role, rank, address, phone_no
-    
+
     def get_role(self):
         print()
         print(''' ___________________________________________''')
