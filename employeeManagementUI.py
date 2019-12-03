@@ -34,13 +34,13 @@ class EmployeeManagementUI():
         print(''' ___________________________________________''')
         print('''|  NaN Air - Employee successfully created  |''')
         print('''|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|''')
-        print('''| SSN: {}                                   |'''.format(self.ssn))
-        print('''| Name: {}                                  |'''.format(self.name))
-        print('''| Role: {}                                  |'''.format(self.role))
-        print('''| Rank: {}                                  |'''.format(self.rank))
-        print('''| Address: {}                               |'''.format(self.address))
-        print('''| Phone number: {}                          |'''.format(self.phone_no))
-        print('''| License: {}                               |'''.format(self.license))
+        print('''| SSN: {:37}|'''.format(self.ssn))
+        print('''| Name: {:36}|'''.format(self.name))
+        print('''| Role: {:36}|'''.format(self.role))
+        print('''| Rank: {:36}|'''.format(self.rank))
+        print('''| Address: {:33}|'''.format(self.address))
+        print('''| Phone number: {:28}|'''.format(self.phone_no))
+        print('''| License: {:33}|'''.format(self.license))
         print('''|                                           |''')
         print('''|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|''')
         print('''| (1) Create another employee               |''')
@@ -49,13 +49,16 @@ class EmployeeManagementUI():
         print('''|                                           |''')
         print(''' ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾''')
         print()
-
-        # self, ssn, name, role, rank, address, phone_no
+    
+    def create_employee(self):
+        pass
+        self.employee = Employee(self.ssn, self.name, self.role, self.rank, self.address, self.phone_no, self.license)
+        return self.employee
     
     def get_role(self):
         print()
         print(''' ___________________________________________''')
-        print('''|         NaN Air - Create Employee         |''')
+        print('''|         NaN Air - Create employee         |''')
         print('''|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|''')
         print('''| (1) Pilot                                 |''')
         print('''| (2) Cabincrew                             |''')
