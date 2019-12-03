@@ -2,7 +2,6 @@ from employeeManagementUI import EmployeeManagementUI
 from planeManagementUI import PlaneManagementUI
 from voyageManagementUI import VoyageManagementUI
 
-
 class MainPageUI():
     def __init__(self):
         self.__employeeManagement = EmployeeManagementUI()

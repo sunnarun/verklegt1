@@ -1,5 +1,3 @@
-
-
 from employeeManagementUI import EmployeeManagementUI
 from planeManagementUI import PlaneManagementUI
 from voyageManagementUI import VoyageManagementUI
@@ -10,6 +8,7 @@ class MainPage():
         self.__employeeManagement = EmployeeManagementUI()
         self.__voyageManagement = VoyageManagementUI()
         self.__planeManagement = PlaneManagementUI()
+        self.renderMenu()
 
     def renderMenu(self):
         user_input = "1"
