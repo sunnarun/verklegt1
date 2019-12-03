@@ -6,11 +6,15 @@ class Employee():
         self.rank = rank
         self.address = address
         self.phone_no = phone_no
-
-    def generate_email(self):
-        self.email = self.name.replace(" ",".").lower() + "@" + "nanaair.is"
-        print(self.email)
+        self.email = self.name.replace(" ",".").lower() + "@" + "nanair.is"
+    
+    def get_email(self):
         return self.email
 
 isol = Employee("0110972519", "Isol Sigurdardottir", "pilot", "captain", "Einiberg 21", "6613536")
-isol.generate_email()
+isol_email = isol.get_email()
+
+dilja = Employee("0203002050", "Dilja Sigurdardottir", "pilot", "co-pilot", "Einiberg 21", "6613136")
+dilja_email = dilja.get_email()
+print(isol_email)
+print(dilja_email)

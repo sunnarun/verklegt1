@@ -1,4 +1,4 @@
-class PlaneManagement():
+class PlaneManagementUI():
     def renderMenu(self):
         user_input = "1"
         while user_input == "1" or user_input == "2":
