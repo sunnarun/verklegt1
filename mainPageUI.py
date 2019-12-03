@@ -32,3 +32,4 @@ class MainPageUI():
 
 a = MainPageUI()
 a.renderMenu()
+#test

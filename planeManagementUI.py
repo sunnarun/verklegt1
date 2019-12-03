@@ -1,5 +1,6 @@
 from plane import Plane
 
+
 class PlaneManagementUI():
     def renderMenu(self):
         user_input = "1"
@@ -20,9 +21,9 @@ class PlaneManagementUI():
             if user_input == "1":
                 self.get_plane_info()
             elif user_input == "2":
-                pass
+                 #ATH með date time, allur listi
             elif user_input == "b":
-                pass
+                pass                #MAIN PAGE
 
     def get_plane_info(self):
         self.registration = input("Enter aircraft registration: ")
@@ -80,9 +81,11 @@ class PlaneManagementUI():
             self.seats = input("Enter number of seats: ")
         self.display_info()
 
+
     def create_plane(self):
         self.plane = Plane(self.registration, self.plane_type, self.manufacturer, self.seats)
         return self.plane
+
 
     def display_confirmation(self):
         print()
@@ -105,7 +108,7 @@ class PlaneManagementUI():
         if user_input == "1":
             self.create_plane()
         elif user_input == "2":
-            pass
+            pass                #MAIN PAGE
 
 
 a = PlaneManagementUI()
