@@ -1,15 +1,15 @@
 
 
-from employeeManagement import EmployeeManagement
-from planeManagement import PlaneManagement
-from voyageManagement import VoyageManagement
+from employeeManagementUI import EmployeeManagementUI
+from planeManagementUI import PlaneManagementUI
+from voyageManagementUI import VoyageManagementUI
 
 
 class MainPage():
     def __init__(self):
-        self.__employeeManagement = EmployeeManagement()
-        self.__voyageManagement = VoyageManagement()
-        self.__planeManagement = PlaneManagement()
+        self.__employeeManagement = EmployeeManagementUI()
+        self.__voyageManagement = VoyageManagementUI()
+        self.__planeManagement = PlaneManagementUI()
 
     def renderMenu(self):
         user_input = "1"
