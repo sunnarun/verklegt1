@@ -53,7 +53,6 @@ class EmployeeManagementUI():
         print()
     
     def create_employee(self):
-        pass
         self.employee = Employee(self.ssn, self.name, self.role, self.rank, self.address, self.phone_no, self.license)
         return self.employee
     
