@@ -12,7 +12,7 @@ class PlaneManagementUI():
             print('''| (1) Create plane                          |''')
             print('''| (2) Get list of planes                    |''')
             print('''|                                           |''')
-            print('''| (3) Go back to home page                  |''')
+            print('''| (press "b" to go back)                    |''')
             print('''|                                           |''')
             print(''' ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾''')
             print()
@@ -21,9 +21,9 @@ class PlaneManagementUI():
             if user_input == "1":
                 if self.get_plane_info() == None: # Ef fallið get_plane_info skilar None þá vill hann fara í main page
                     return None
-            #elif user_input == "2":
-                    #ATH með date time, allur listi
-            elif user_input == "3":
+            elif user_input == "2":
+                pass #ATH með date time, allur listi
+            elif user_input == "b":
                 return None
 
 
@@ -55,7 +55,6 @@ class PlaneManagementUI():
         if user_input == "1":
             if self.print_confirmation() == None:   # Ef fallið get_plane_info skilar None þá vill hann fara í main page
                 return None
-            
         elif user_input == "2":
             self.edit_info()
 
@@ -69,6 +68,8 @@ class PlaneManagementUI():
         print('''| (3) Aircraft manufacturer: {:15}|'''.format(self.manufacturer))
         print('''| (4) Number of seats: {:21}|'''.format(self.seats))
         print('''|                                           |''')
+        print('''| (press "b" to go back)                    |''')
+        print('''|                                           |''')
         print(''' ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾''')
         print()
         user_input = input("Edit selection: ")
@@ -81,6 +82,8 @@ class PlaneManagementUI():
             self.manufacturer = input("Enter aircraft manufacturer: ")
         elif user_input == "4":
             self.seats = input("Enter number of seats: ")
+        elif user_input == "b":
+            self.display_info()
         self.display_info()
 
 
