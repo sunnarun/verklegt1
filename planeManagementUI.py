@@ -1,7 +1,9 @@
+from mainPageUI import MainPageUI
 from plane import Plane
 
 
 class PlaneManagementUI():
+
     def renderMenu(self):
         user_input = "1"
         while user_input == "1" or user_input == "2":
@@ -21,9 +23,11 @@ class PlaneManagementUI():
             if user_input == "1":
                 self.get_plane_info()
             elif user_input == "2":
+                pass
                  #ATH með date time, allur listi
             elif user_input == "b":
-                pass                #MAIN PAGE
+                pass
+
 
     def get_plane_info(self):
         self.registration = input("Enter aircraft registration: ")
