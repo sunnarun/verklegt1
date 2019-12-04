@@ -13,7 +13,7 @@ class PlaneManagementUI():
             print('''| (1) Create plane                          |''')
             print('''| (2) Get list of planes                    |''')
             print('''|                                           |''')
-            print('''| (press "b" for back)                      |''')
+            print('''| (3) Go back to home page                  |''')
             print('''|                                           |''')
             print(''' ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾''')
             print()
