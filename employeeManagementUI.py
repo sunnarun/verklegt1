@@ -31,7 +31,7 @@ class EmployeeManagementUI():
         self.display_info()
 
 
-    def (self):
+    def display_info(self):
         print()
         print(''' ___________________________________________''')
         print('''|  NaN Air - Employee successfully created  |''')

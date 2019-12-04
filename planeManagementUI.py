@@ -1,4 +1,4 @@
-from mainPageUI import MainPageUI
+#from mainPageUI import MainPageUI
 from plane import Plane
 
 
@@ -22,8 +22,7 @@ class PlaneManagementUI():
             print()
             if user_input == "1":
                 self.get_plane_info()
-            elif user_input == "2":
-                pass
+            #elif user_input == "2":
                  #ATH með date time, allur listi
             elif user_input == "b":
                 pass
@@ -110,7 +109,7 @@ class PlaneManagementUI():
         user_input = input("Input: ")
         print()
         if user_input == "1":
-            self.create_plane()
+            self.get_plane_info()
         elif user_input == "2":
             pass                #MAIN PAGE
 
