@@ -1,4 +1,4 @@
-from voyage import Voyage
+#from voyage import Voyage
 
 class VoyageManagementUI():
     def renderMenu(self):
@@ -30,8 +30,14 @@ class VoyageManagementUI():
             print(''' -------------------------------------------''')        
             print()
             user_input = input()
+<<<<<<< HEAD
+            print()
+            if user_input == "1":
+                self.get_voyage_info()
+=======
             if user_input == "3":
                 self.get_destination_info()
+>>>>>>> 48567005391b55f3057b334289492581631e23f0
     
     def get_destination_info(self):
         print()
@@ -85,6 +91,7 @@ class VoyageManagementUI():
         print(''' ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾''')
         print()
         user_input = input("What to edit: ")
+        print()
         if user_input == '1':
             self.country = input("Enter country: ")
         elif user_input == '2':
@@ -102,7 +109,11 @@ class VoyageManagementUI():
     def print_confirmation(self):
         print()
         print(''' ___________________________________________''')
+<<<<<<< HEAD
+        print('''|                 NaN Air                   |''')
+=======
         print('''|                  NaN Air                  |''')
+>>>>>>> 48567005391b55f3057b334289492581631e23f0
         print('''|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|''')
         print('''| Destination successfully created!         |''')
         print('''|                                           |''')
@@ -111,16 +122,25 @@ class VoyageManagementUI():
         print('''|                                           |''')
         print(''' ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾''')
         print()
+<<<<<<< HEAD
+        user_input = input("Input: ")
+        print()
+        #Hafdís var að breyta þessu!
+        if user_input == "1":
+            self.get_voyage_info()
+        elif user_input == "2":
+            return None
+        
+=======
         user_input = input()
         if user_input == '1':
             self.get_destination_info()
         elif user_input == '2':
             return None
+>>>>>>> 48567005391b55f3057b334289492581631e23f0
 
     def create_destination(self):
         self.voyage = Voyage(self.country, self.airport, self.airline, self.distance, self.contact_name, self.contact_phone)
         self.print_confirmation()
         return self.voyage
 
-a = VoyageManagementUI()
-a.renderMenu()

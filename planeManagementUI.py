@@ -3,8 +3,10 @@ from plane import Plane
 
 class PlaneManagementUI():
 
-    def renderMenu(self):
 
+    def renderMenu(self):
+        user_input = "1"
+        while user_input == "1" or user_input == "2" or user_input == "3":
             print(''' ___________________________________________''')
             print('''|                  NaN Air                  |''')
             print('''|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾| ''')
@@ -21,7 +23,7 @@ class PlaneManagementUI():
             if user_input == "1":
                 self.get_plane_info()
             #elif user_input == "2":
-                 #ATH með date time, allur listi
+                    #ATH með date time, allur listi
             elif user_input == "3":
                 return None
 
@@ -106,5 +108,3 @@ class PlaneManagementUI():
             return None
 
 
-a = PlaneManagementUI()
-a.renderMenu()
