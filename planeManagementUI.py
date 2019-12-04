@@ -70,7 +70,7 @@ class PlaneManagementUI():
         print('''|                                           |''')
         print(''' ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾''')
         print()
-        user_input = input("What to edit: ")
+        user_input = input("Edit selection: ")
         print()
         if user_input == "1":
             self.registration = input("Enter aircraft registration: ")
