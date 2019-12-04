@@ -11,7 +11,7 @@ class VoyageManagementUI():
             print('''| (2) Get voyage data                       |''')
             print('''| (3) Update voyage                         |''')
             print('''|                                           |''')
-            print('''| (press "b" to go back)                    |''')
+            print('''| (4) Go back to home page                  |''')
             print('''|                                           |''')
             print(''' ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾''')
             user_input = input()
@@ -22,7 +22,7 @@ class VoyageManagementUI():
                 pass
             elif user_input == "3":
                 pass
-            elif user_input == "b":
+            elif user_input == "4":
                 return None
     
     def get_input(self):
@@ -33,7 +33,7 @@ class VoyageManagementUI():
             print('''| (2) Gather crew for voyage                |''')
             print('''| (3) Create destination                    |''')
             print('''|                                           |''')
-            print('''| (press "b" to go back)                    |''')
+            print('''| press 'b' for back                        |''')
             print('''|                                           |''')
             print(''' ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾''')       
             print()
@@ -45,6 +45,9 @@ class VoyageManagementUI():
             elif user_input == "3":
                 if self.get_destination_info() == None:
                     return None
+            elif user_input == "b":
+                return None
+
     
     def get_destination_info(self):
         print()
@@ -131,7 +134,7 @@ class VoyageManagementUI():
             pass
         elif user_input == "2":
             return None
-        
+
 
     def create_destination(self):
         self.voyage = Voyage(self.country, self.airport, self.airline, self.distance, self.contact_name, self.contact_phone)

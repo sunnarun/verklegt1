@@ -39,6 +39,10 @@ class EmployeeManagementUI():
         print()
         user_input = input("Input: ")
         print()
+        print(' _________________________________________')
+        print("|  NaN Air - Enter employee information   |")
+        print(" ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ ")
+        print()
         self.role = ""
         if user_input == "1":
             self.role = "Pilot"
@@ -50,10 +54,6 @@ class EmployeeManagementUI():
 
 
     def get_employee_info(self):
-        print()
-        print(' _________________________________________')
-        print("|  NaN Air - Enter employee information   |")
-        print(" ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ ")
         self.role = self.get_role()
         self.ssn = input("Enter SSN: ")
         self.name = input("Enter name: ")
