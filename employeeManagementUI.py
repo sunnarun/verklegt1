@@ -137,7 +137,6 @@ class EmployeeManagementUI():
         elif user_input == "2":
             return None
 
-
     def create_employee(self):
         self.employee = Employee(self.ssn, self.name, self.role, self.rank, \
             self.address, self.phone_no, self.license)
