@@ -30,9 +30,8 @@ class VoyageManagementUI():
             print(''' -------------------------------------------''')        
             print()
             user_input = input()
-            print()
-            if user_input == "1":
-                self.get_voyage_info()
+            if user_input == "3":
+                self.get_destination_info()
     
     def get_destination_info(self):
         print()

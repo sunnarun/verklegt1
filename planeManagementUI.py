@@ -1,8 +1,6 @@
 from plane import Plane
 
-
 class PlaneManagementUI():
-
 
     def renderMenu(self):
         user_input = "1"
@@ -21,7 +19,8 @@ class PlaneManagementUI():
             user_input = input("Input: ")
             print()
             if user_input == "1":
-                self.get_plane_info()
+                if self.get_plane_info() == None: # Ef fallið get_plane_info skilar None þá vill hann fara í main page
+                    return None
             #elif user_input == "2":
                     #ATH með date time, allur listi
             elif user_input == "3":
@@ -54,11 +53,11 @@ class PlaneManagementUI():
         user_input = input("Input: ")
         print()
         if user_input == "1":
-            self.print_confirmation()
+            if self.print_confirmation() == None:   # Ef fallið get_plane_info skilar None þá vill hann fara í main page
+                return None
+            
         elif user_input == "2":
             self.edit_info()
-
-
 
     def edit_info(self):
         print()
@@ -105,6 +104,6 @@ class PlaneManagementUI():
         if user_input == "1":
             self.get_plane_info()
         elif user_input == "2":
-            return None
+            return None     # Skil None þá vill hann fara í main page
 
 

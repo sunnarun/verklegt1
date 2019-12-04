@@ -3,8 +3,6 @@ from employee import Employee
 class EmployeeManagementUI():
 
     def renderMenu(self):
-        user_input = "1"
-        while user_input == "1" or user_input == "2" or user_input == "3":
             print(''' ___________________________________________''')
             print('''|       NaN Air - Employee management       |''')
             print('''|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|''')
@@ -57,7 +55,8 @@ class EmployeeManagementUI():
             self.license = input("Enter license: ")
         else:                               # Cabincrew
             self.license = "N/A"
-        self.display_info()
+        if self.display_info() == None:
+            return None
 
 
     def display_info(self):
