@@ -18,7 +18,7 @@ class MainPageUI():
             print('''| (2) Voyage Management                     |''')
             print('''| (3) Plane Management                      |''')
             print('''|                                           |''')
-            print('''| (press "b" for back and "q" to quit)      |''')
+            print('''| (press "q" to quit)                       |''')
             print('''|___________________________________________|''')
             print()
             user_input = input("Input: ")
