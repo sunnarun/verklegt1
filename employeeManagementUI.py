@@ -3,27 +3,29 @@ from employee import Employee
 class EmployeeManagementUI():
 
     def renderMenu(self):
-        print(''' ___________________________________________''')
-        print('''|       NaN Air - Employee management       |''')
-        print('''|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|''')
-        print('''| (1) Create employee                       |''')
-        print('''| (2) Get employee data                     |''')
-        print('''| (3) Update employee                       |''')
-        print('''|                                           |''')
-        print('''| (4) Go back to home page                  |''')
-        print('''|                                           |''')
-        print(''' ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾''')
-        print()
-        user_input = input("Input: ")
-        print()
-        if user_input == "1":
-            self.get_employee_info()
-        elif user_input == "2":
-            pass
-        elif user_input == "3":
-            pass
-        elif user_input == "4":
-            return None
+        user_input = "1"
+        while user_input == "1" or user_input == "2" or user_input == "3":
+            print(''' ___________________________________________''')
+            print('''|       NaN Air - Employee management       |''')
+            print('''|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|''')
+            print('''| (1) Create employee                       |''')
+            print('''| (2) Get employee data                     |''')
+            print('''| (3) Update employee                       |''')
+            print('''|                                           |''')
+            print('''| (4) Go back to home page                  |''')
+            print('''|                                           |''')
+            print(''' ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾''')
+            print()
+            user_input = input("Input: ")
+            print()
+            if user_input == "1":
+                self.get_employee_info()
+            elif user_input == "2":
+                pass
+            elif user_input == "3":
+                pass
+            elif user_input == "4":
+                return None
 
     def get_role(self):
         print()
@@ -142,6 +144,3 @@ class EmployeeManagementUI():
             self.address, self.phone_no, self.license)
         return self.employee
 
-
-a = EmployeeManagementUI()
-a.renderMenu()

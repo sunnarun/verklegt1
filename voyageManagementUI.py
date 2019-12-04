@@ -30,6 +30,7 @@ class VoyageManagementUI():
             print(''' -------------------------------------------''')        
             print()
             user_input = input()
+            print()
             if user_input == "1":
                 self.get_voyage_info()
     
@@ -81,6 +82,7 @@ class VoyageManagementUI():
         print(''' ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾''')
         print()
         user_input = input("What to edit: ")
+        print()
         if user_input == '1':
             self.country = input("Enter country: ")
         elif user_input == '2':
@@ -98,7 +100,7 @@ class VoyageManagementUI():
     def print_confirmation(self):
         print()
         print(''' ___________________________________________''')
-        print('''|  NaN Air -   |''')
+        print('''|                 NaN Air                   |''')
         print('''|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|''')
         print('''| Voyage successfully created!              |''')
         print('''|                                           |''')
@@ -107,10 +109,16 @@ class VoyageManagementUI():
         print('''|                                           |''')
         print(''' ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾''')
         print()
+        user_input = input("Input: ")
+        print()
+        #Hafdís var að breyta þessu!
+        if user_input == "1":
+            self.get_voyage_info()
+        elif user_input == "2":
+            return None
+        
 
     def create_voyage(self):
         self.voyage = Voyage(self.country, self.airport, self.airline, self.distance, self.contact_name, self.contact_phone)
         return self.voyage
 
-a = VoyageManagementUI()
-a.renderMenu()
