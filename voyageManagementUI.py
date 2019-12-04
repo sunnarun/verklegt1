@@ -30,16 +30,20 @@ class VoyageManagementUI():
             print(''' -------------------------------------------''')        
             print()
             user_input = input()
-            if user_input == "1":
-                self.get_voyage_info()
+            if user_input == "3":
+                self.get_destination_info()
     
-    def get_voyage_info(self):
-        self.country = input("Enter country: ")
-        self.airport = input("Enter airport: ")
-        self.airline = input("Enter airline: ")
-        self.distance = input("Enter distance: ")
-        self.contact_name = input("Enter contact name: ")  
-        self.contact_phone = input("Enter contact phone: ")
+    def get_destination_info(self):
+        print()
+        print(' _____________________________')
+        print("| NaN Air - Enter information |")
+        print(" ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ ")
+        self.country = input(" Enter country: ")
+        self.airport = input(" Enter airport: ")
+        self.airline = input(" Enter airline: ")
+        self.distance = input(" Enter distance: ")
+        self.contact_name = input(" Enter contact name: ")  
+        self.contact_phone = input(" Enter contact phone: ")
         self.display_info()
 
     def display_info(self):
@@ -62,7 +66,7 @@ class VoyageManagementUI():
         print()
         user_input = input()
         if user_input == '1':
-            self.print_confirmation()
+            self.create_destination()
         elif user_input == '2':
             self.edit_info()
 
@@ -98,18 +102,24 @@ class VoyageManagementUI():
     def print_confirmation(self):
         print()
         print(''' ___________________________________________''')
-        print('''|  NaN Air -   |''')
+        print('''|                  NaN Air                  |''')
         print('''|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|''')
-        print('''| Voyage successfully created!              |''')
+        print('''| Destination successfully created!         |''')
         print('''|                                           |''')
         print('''| (1) Create another voyage                 |''')
         print('''| (2) Go back to home page                  |''')
         print('''|                                           |''')
         print(''' ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾''')
         print()
+        user_input = input()
+        if user_input == '1':
+            self.get_destination_info()
+        elif user_input == '2':
+            return None
 
-    def create_voyage(self):
+    def create_destination(self):
         self.voyage = Voyage(self.country, self.airport, self.airline, self.distance, self.contact_name, self.contact_phone)
+        self.print_confirmation()
         return self.voyage
 
 a = VoyageManagementUI()
