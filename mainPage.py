@@ -1,5 +1,5 @@
 from employeeManagementUI import EmployeeManagementUI
-from planeManagementUI import PlaneManagementUI
+#from planeManagementUI import PlaneManagementUI
 from voyageManagementUI import VoyageManagementUI
 
 
@@ -7,7 +7,7 @@ class MainPage():
     def __init__(self):
         self.__employeeManagement = EmployeeManagementUI()
         self.__voyageManagement = VoyageManagementUI()
-        self.__planeManagement = PlaneManagementUI()
+        #self.__planeManagement = PlaneManagementUI()
         self.renderMenu()
 
     def renderMenu(self):
@@ -28,8 +28,8 @@ class MainPage():
                 self.__employeeManagement.renderMenu()
             elif user_input == "2":
                 self.__voyageManagement.renderMenu()
-            elif user_input == "3":
-                self.__planeManagement.renderMenu()
+            #elif user_input == "3":
+             #   self.__planeManagement.renderMenu()
 
 a = MainPage()
 a.renderMenu()

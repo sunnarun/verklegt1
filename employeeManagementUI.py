@@ -19,7 +19,8 @@ class EmployeeManagementUI():
             print()
             self.user_input = input()
             self.get_employee_info()
-    
+
+
     def get_employee_info(self):
         self.role = self.get_role()
         self.ssn = input("Enter SSN: ")
@@ -63,6 +64,7 @@ class EmployeeManagementUI():
             user_input = input()
             if user_input == "1":
                 self.get_employee_info()
+
 
     def display_info(self):
         print()
