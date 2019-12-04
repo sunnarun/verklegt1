@@ -21,8 +21,8 @@ class MainPage():
             print('''| (3) Plane Management                      |''')
             print('''|                                           |''')
             print('''| (press "b" for back and "q" to quit)      |''')
-            print('''|___________________________________________|''')
-            print()
+            print('''|                                           |''')
+            print(''' ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾''')
             user_input = input()
             if user_input == "1":
                 self.__employeeManagement.renderMenu()

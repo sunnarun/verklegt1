@@ -110,8 +110,7 @@ class EmployeeManagementUI():
         print('''| (1) Create another employee               |''')
         print('''| (2) Go back to home page                  |''')
         print('''|                                           |''')
-        print('''|___________________________________________|''')
-        print()
+        print(''' ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ ''')
     
     def create_employee(self):
         self.employee = Employee(self.ssn, self.name, self.role, self.rank, \
