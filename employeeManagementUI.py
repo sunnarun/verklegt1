@@ -10,7 +10,7 @@ class EmployeeManagementUI():
             print('''| (2) Get employee data                     |''')
             print('''| (3) Update employee                       |''')
             print('''|                                           |''')
-            print('''| (4) Go back to home page                  |''')
+            print('''| (press "b" to go back)                    |''')
             print('''|                                           |''')
             print(''' ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾''')
             print()
@@ -22,7 +22,7 @@ class EmployeeManagementUI():
                 pass
             elif user_input == "3":
                 pass
-            elif user_input == "4":
+            elif user_input == "b":
                 return None
 
     def get_role(self):
@@ -33,18 +33,27 @@ class EmployeeManagementUI():
         print('''| (1) Pilot                                 |''')
         print('''| (2) Cabincrew                             |''')
         print('''|                                           |''')
+        print('''| (press "b" to go back)                    |''')
+        print('''|                                           |''')
         print(''' ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾''')
         print()
-        user_input = input()
+        user_input = input("Input: ")
+        print()
         self.role = ""
         if user_input == "1":
             self.role = "Pilot"
         elif user_input == "2":
             self.role = "Cabincrew"
+        elif user_input == "b":
+            self.renderMenu()
         return self.role
 
 
     def get_employee_info(self):
+        print()
+        print(' _________________________________________')
+        print("|  NaN Air - Enter employee information   |")
+        print(" ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ ")
         self.role = self.get_role()
         self.ssn = input("Enter SSN: ")
         self.name = input("Enter name: ")

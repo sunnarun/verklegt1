@@ -11,7 +11,7 @@ class VoyageManagementUI():
             print('''| (2) Get voyage data                       |''')
             print('''| (3) Update voyage                         |''')
             print('''|                                           |''')
-            print('''| (4) Go back to home page                  |''')
+            print('''| (press "b" to go back)                    |''')
             print('''|                                           |''')
             print(''' ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾''')
             user_input = input()
@@ -22,7 +22,7 @@ class VoyageManagementUI():
                 pass
             elif user_input == "3":
                 pass
-            elif user_input == "4":
+            elif user_input == "b":
                 return None
     
     def get_input(self):
@@ -33,7 +33,7 @@ class VoyageManagementUI():
             print('''| (2) Gather crew for voyage                |''')
             print('''| (3) Create destination                    |''')
             print('''|                                           |''')
-            print('''| (press "b" for back and "q" to quit)      |''')
+            print('''| (press "b" to go back)                    |''')
             print('''|                                           |''')
             print(''' ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾''')       
             print()
