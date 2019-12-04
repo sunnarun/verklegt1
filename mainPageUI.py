@@ -2,7 +2,6 @@ from employeeManagementUI import EmployeeManagementUI
 from planeManagementUI import PlaneManagementUI
 from voyageManagementUI import VoyageManagementUI
 
-
 class MainPageUI():
     def __init__(self):
         self.__employeeManagement = EmployeeManagementUI()
@@ -10,8 +9,7 @@ class MainPageUI():
         self.__planeManagement = PlaneManagementUI()
 
     def renderMenu(self):
-        user_input = "1"
-        while user_input == "1" or user_input == "2" or user_input == "3":
+
             print(''' ___________________________________________''')
             print('''|                  NaN Air                  |''')
             print('''|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|''')
@@ -19,10 +17,10 @@ class MainPageUI():
             print('''| (2) Voyage Management                     |''')
             print('''| (3) Plane Management                      |''')
             print('''|                                           |''')
-            print('''| (press "b" for back and "q" to quit)      |''')
+            print('''| (press "q" to quit)                       |''')
             print('''|___________________________________________|''')
             print()
-            user_input = input()
+            user_input = input("Input: ")
             if user_input == "1":
                 self.__employeeManagement.renderMenu()
             elif user_input == "2":
@@ -32,4 +30,4 @@ class MainPageUI():
 
 a = MainPageUI()
 a.renderMenu()
-#test
+

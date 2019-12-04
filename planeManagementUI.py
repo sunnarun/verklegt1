@@ -2,9 +2,9 @@ from plane import Plane
 
 
 class PlaneManagementUI():
+
     def renderMenu(self):
-        user_input = "1"
-        while user_input == "1" or user_input == "2":
+
             print(''' ___________________________________________''')
             print('''|                  NaN Air                  |''')
             print('''|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾| ''')
@@ -12,7 +12,7 @@ class PlaneManagementUI():
             print('''| (1) Create plane                          |''')
             print('''| (2) Get list of planes                    |''')
             print('''|                                           |''')
-            print('''| (press "b" for back)                      |''')
+            print('''| (3) Go back to home page                  |''')
             print('''|                                           |''')
             print(''' ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾''')
             print()
@@ -20,11 +20,11 @@ class PlaneManagementUI():
             print()
             if user_input == "1":
                 self.get_plane_info()
-            elif user_input == "2":
-                pass
+            #elif user_input == "2":
                  #ATH með date time, allur listi
-            elif user_input == "b":
-                pass                #MAIN PAGE
+            elif user_input == "3":
+                return None
+
 
     def get_plane_info(self):
         self.registration = input("Enter aircraft registration: ")
@@ -36,7 +36,7 @@ class PlaneManagementUI():
     def display_info(self):
         print()
         print(''' ___________________________________________''')
-        print('''|  NaN Air - Airplane successfully created  |''')
+        print('''|        NaN Air - Review information       |''')
         print('''|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|''')
         print('''| Aircraft registration: {:19}|'''.format(self.registration))
         print('''| Aircraft type: {:27}|'''.format(self.plane_type))
@@ -52,7 +52,7 @@ class PlaneManagementUI():
         user_input = input("Input: ")
         print()
         if user_input == "1":
-            self.display_confirmation()
+            self.print_confirmation()
         elif user_input == "2":
             self.edit_info()
 
@@ -87,29 +87,23 @@ class PlaneManagementUI():
         self.plane = Plane(self.registration, self.plane_type, self.manufacturer, self.seats)
         return self.plane
 
-
-    def display_confirmation(self):
-        print()
+    def print_confirmation(self):
         print(''' ___________________________________________''')
-        print('''|  NaN Air - Airplane successfully created  |''')
+        print('''|                  NaN Air                  |''')
         print('''|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|''')
-        print('''| Aircraft registration: {:19}|'''.format(self.registration))
-        print('''| Aircraft type: {:27}|'''.format(self.plane_type))
-        print('''| Aircraft manufacturer: {:19}|'''.format(self.manufacturer))
-        print('''| Number of seats: {:25}|'''.format(self.seats))
+        print('''| Plane successfullly created!              |''')
         print('''|                                           |''')
-        print('''|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|''')
         print('''| (1) Create another plane                  |''')
         print('''| (2) Go back to home page                  |''')
         print('''|                                           |''')
-        print(''' ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾''')
+        print('''|___________________________________________|''')
         print()
         user_input = input("Input: ")
         print()
         if user_input == "1":
-            self.create_plane()
+            self.get_plane_info()
         elif user_input == "2":
-            pass                #MAIN PAGE
+            return None
 
 
 a = PlaneManagementUI()

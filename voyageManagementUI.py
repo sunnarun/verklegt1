@@ -11,7 +11,7 @@ class VoyageManagementUI():
             print('''| (2) Get voyage data                       |''')
             print('''| (3) Update voyage                         |''')
             print('''|                                           |''')
-            print('''| (press "b" for back and "q" to quit)      |''')
+            print('''| (4) Go back to home page                  |''')
             print(''' -------------------------------------------''')
             print()
             user_input = input()
@@ -45,7 +45,7 @@ class VoyageManagementUI():
     def display_info(self):
         print()
         print(''' ___________________________________________''')
-        print('''|  NaN Air -   |''')
+        print('''|        NaN Air - Review information       |''')
         print('''|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|''')
         print('''| Country: {:33}|'''.format(self.country))
         print('''| Airport: {:33}|'''.format(self.airport))
@@ -62,14 +62,14 @@ class VoyageManagementUI():
         print()
         user_input = input()
         if user_input == '1':
-            self.display_confirmation()
+            self.print_confirmation()
         elif user_input == '2':
             self.edit_info()
 
     def edit_info(self):
         print()
         print(''' ___________________________________________''')
-        print('''|  NaN Air -   |''')
+        print('''|        NaN Air - Edit information         |''')
         print('''|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|''')
         print('''| (1) Country: {:29}|'''.format(self.country))
         print('''| (2) Airport: {:29}|'''.format(self.airport))
@@ -95,20 +95,14 @@ class VoyageManagementUI():
             self.contact_phone = input("Enter contact phone: ")
         self.display_info()
 
-    def display_confirmation(self):
+    def print_confirmation(self):
         print()
         print(''' ___________________________________________''')
         print('''|  NaN Air -   |''')
         print('''|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|''')
-        print('''| Country: {:33}|'''.format(self.country))
-        print('''| Airport: {:33}|'''.format(self.airport))
-        print('''| Airline: {:33}|'''.format(self.airline))
-        print('''| Distance: {:32}|'''.format(self.distance))
-        print('''| Contact name: {:28}|'''.format(self.contact_name))
-        print('''| Contact phone: {:27}|'''.format(self.contact_phone))
+        print('''| Voyage successfully created!              |''')
         print('''|                                           |''')
-        print('''|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|''')
-        print('''| (1) Create another plane                  |''')
+        print('''| (1) Create another voyage                 |''')
         print('''| (2) Go back to home page                  |''')
         print('''|                                           |''')
         print(''' ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾''')
