@@ -20,7 +20,7 @@ class PlaneManagementUI():
             print()
             if user_input == "1":
                 self.get_plane_info()
-            elif user_input == "2":
+            #elif user_input == "2":
                  #ATH með date time, allur listi
             elif user_input == "b":
                 pass                #MAIN PAGE
