@@ -16,7 +16,7 @@ class Destination():
 
 
 
-akureyri = Destination('Ísland', 'Akureyrarvöllur','00:45',383,'Gunnar Grímsson','5812345')
+akureyri = Destination('Ísland', 'Akureyrarvöllur','00:45',383.0,'Gunnar Grímsson','5812345')
 akureyri_CI = akureyri.get_contact_info()
 akureyri_info = akureyri.get_destination()
 
